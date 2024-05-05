@@ -22,6 +22,7 @@
 
 <script>
 
+// 請改成 composition api 的方式
 export default {
   setup() {
      const vehicles = ([

@@ -1,10 +1,12 @@
 <template>
   <div class="container">
+    <div class="text-red-200"> tailwind testing</div>
+
     <div class='item' v-for="item in items" :key="item.label" @click="goDetail(item.url)">
-        <div class="image-wrapper">
-          <img :src="item.image" :alt="item.label">
-          <span>{{ item.label }}</span>
-        </div>
+      <div class="image-wrapper">
+        <img :src="item.image" :alt="item.label">
+        <span>{{ item.label }}</span>
+      </div>
     </div>
   </div>
 </template>
