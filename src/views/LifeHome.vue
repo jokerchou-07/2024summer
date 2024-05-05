@@ -1,11 +1,12 @@
 <template>
-  <div class="container">
-    <div class="text-red-200"> tailwind testing</div>
-
-    <div class='item' v-for="item in items" :key="item.label" @click="goDetail(item.url)">
-      <div class="image-wrapper">
-        <img :src="item.image" :alt="item.label">
-        <span>{{ item.label }}</span>
+  <div class="text-red-200 bg-amber-800 w-screen h-[9vh] fixed"> tailwind testing</div>
+  <div class="">
+    <div class="flex flex-wrap justify-center content-center w-sreen h-[100vh]">
+      <div class='item' v-for="item in items" :key="item.label" @click="goDetail(item.url)">
+        <div class="mx-[4vw]">
+          <img :src="item.image" :alt="item.label">
+          <span>{{ item.label }}</span>
+        </div>
       </div>
     </div>
   </div>
@@ -31,7 +32,7 @@ export default {
   },
 }
 </script>
-
+<!-- 
 <style scoped>
 .container {
   display: flex;
@@ -61,9 +62,5 @@ export default {
   color: black; 
   font-weight: bold;
   padding: 5px;
-
-
 }
-</style>
-
-
+</style> -->
