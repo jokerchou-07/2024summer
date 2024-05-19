@@ -45,11 +45,13 @@ export default {
 
 <style scoped>
 .signboard {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin-top: 5%;
+  padding-top: 6rem;
 }
 
 .vehicle-container {
