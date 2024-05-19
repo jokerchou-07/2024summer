@@ -1,12 +1,10 @@
 <template>
-  <div class="text-red-200 bg-amber-800 w-screen h-[9vh] fixed"> tailwind testing</div>
-  <div class="">
-    <div class="flex flex-wrap justify-center content-center w-sreen h-[100vh]">
-      <div class='item' v-for="item in items" :key="item.label" @click="goDetail(item.url)">
-        <div class="mx-[4vw]">
-          <img :src="item.image" :alt="item.label">
-          <span>{{ item.label }}</span>
-        </div>
+  <div class="text-red-200 bg-amber-800 w-screen h-24 fixed"> tailwind testing</div>
+  <div class="flex flex-wrap justify-center items-center w-sreen h-screen p-8 pt-24">
+    <div class="w-full md:w-1/2 xl:w-1/4 flex justify-center" v-for="item in items" :key="item.label" @click="goDetail(item.url)">
+      <div class="flex flex-col w-3/4 items-center">
+        <img :src="item.image" :alt="item.label">
+        <span>{{ item.label }}</span>
       </div>
     </div>
   </div>
